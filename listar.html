@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listar</title>
+    <link rel="stylesheet" href="css/Listar.css" />
+  </head>
+  <body>
+    <!-- Barra Menu Inicio -->
+    <header>
+      <div class="interior">
+        <a href="" class="logo"><img src="src/logo.png" alt="" /></a>
+        <nav class="navegacion">
+          <ul>
+            <li class="dropdown"><a href="formulario.html">Formulario</a></li>
+            <li class="active"><a href="listar.html">Listar Formulario</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Barra Menu Fin -->
+
+    <div class="container">
+      <titulo>Lista formulario</titulo>
+      <br />
+      <p1>
+        Este es el listado dec con los datos anteriormente agregados en el formulario.
+      </p1>
+      <br>
+      <table class="table" id="formularioTable">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Rut vendedor</th>
+            <th>Patente vehiculo</th>
+            <th>Marca vehiculo</th>
+            <th>Modelo vehiculo</th>
+            <th>Color vehiculo</th>
+          </tr>
+        </thead>
+      </table>
+      <div class="line"></div>
+      <p>Mostrando registros del 1 al 10 de un total de 10 registros. </p>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/uiLogic.js"></script>
+  </body>
+</html>

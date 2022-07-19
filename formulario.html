@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/Formulario.css" />
+  </head>
+  <body>
+    <!-- Barra Menu Inicio -->
+    <header>
+      <div class="interior">
+        <a href="" class="logo"><img src="src/logo.png" alt="" /></a>
+        <nav class="navegacion">
+          <ul>
+            <li class="active"><a href="formulario.html">Formulario</a></li>
+            <li class="dropdown">
+              <a href="listar.html">Listar Formulario</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Barra Menu Fin -->
+
+    <div class="container">
+      <titulo>Nuevo formulario</titulo>
+      <br />
+      <p>
+        En este formulario debe llenar sus datos en las casillas
+        corresponidentes.
+      </p>
+      <form action="#">
+        <div class="form first">
+          <div class="detalles personales">
+            <span class="title">Datos del vendedor:</span>
+            <div class="fields">
+              <div class="input-field">
+                <label>Nombre y apellido</label>
+                <input type="text" id="txtNombre" placeholder=" " required />
+              </div>
+
+              <div class="input-field">
+                <label>Rut Vendedor</label>
+                <input type="text" id="txtRut" placeholder=" " required />
+              </div>
+            </div>
+          </div>
+
+          <div class="line"></div>
+
+          <div class="detalles vehiculo">
+            <span class="title">Datos del vehiculo:</span>
+            <div class="fields">
+              <div class="input-field">
+                <label>Patente vehiculo</label>
+                <input type="text" id="txtPatente" placeholder=" " required />
+              </div>
+
+              <div class="input-field">
+                <label>Marca vehiculo</label>
+                <select id="cbxMarca">
+                  <option value="marca"></option>
+                  <option value="marca">Audi</option>
+                  <option value="marca">Ford</option>
+                  <option value="marca">Nissan</option>
+                  <option value="marca">BMW</option>
+                  <option value="marca">KIA</option>
+                </select>
+              </div>
+
+              <div class="input-field">
+                <label>Modelo vehiculo</label>
+                <select id="cbxModelo">
+                  <option value="modelo"></option>
+                  <option value="modelo">R8</option>
+                  <option value="modelo">Fiesta</option>
+                  <option value="modelo">Silvia</option>
+                  <option value="modelo">I8</option>
+                  <option value="modelo">Ceratto</option>
+                </select>
+              </div>
+
+              <div class="input-field">
+                <label>Color vehiculo</label>
+                <select id="cbxColor">
+                  <option value="color"></option>
+                  <option value="color">Azul</option>
+                  <option value="color">Negro</option>
+                  <option value="color">Rojo</option>
+                  <option value="color">Verde</option>
+                  <option value="color">Blanco</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="line"></div>
+
+          <button class="enviarbtn" id="btnSaveFormulario">
+            <span class="btnText">Enviar</span>
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/uiLogic.js"></script>
+  </body>
+</html>
